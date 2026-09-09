@@ -63,7 +63,7 @@
   <pre><code>sudo tee /etc/apt/sources.list.d/cairn.sources &gt;/dev/null &lt;&lt;EOF
 Types: deb
 URIs: https://p2bid.github.io/cairn-apt
-Suites: $(lsb_release -cs)
+Suites: $(. /etc/os-release; echo "$VERSION_CODENAME")
 Components: main
 Signed-By:
 $(curl -fsSL https://p2bid.github.io/cairn-apt/cairn.asc | sed -e 's/^/ /' -e 's/^ $/ ./')
@@ -94,6 +94,10 @@ cairn install</code></pre>
 
   <h2>Чего здесь нет</h2>
   <p>Архитектура одна — <strong>amd64</strong>. ARM не собирается и в индексе не объявлен.</p>
+  <p>Кодовое имя берётся разбором <code>/etc/os-release</code>, а не командой
+  <code>lsb_release</code>: последней в минимальной системе и в контейнере обычно нет, и строка
+  вышла бы с пустым <code>Suites:</code>.</p>
+
   <p>Выпуски Ubuntu появляются здесь по мере сборки. Если <code>apt update</code> прошёл, а пакет
   не нашёлся — под ваш выпуск он ещё не собран; посмотрите, какие suite есть, в
   <a href="dists/">dists/</a>.</p>

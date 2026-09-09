@@ -18,7 +18,9 @@ Signed-By:
 ```
 
 `Suites` — кодовое имя своего выпуска Ubuntu: `jammy` (22.04), `noble` (24.04) или
-`resolute` (26.04). Узнаётся командой `lsb_release -cs`.
+`resolute` (26.04). Узнаётся разбором `/etc/os-release`:
+`. /etc/os-release; echo "$VERSION_CODENAME"`. Не `lsb_release` — его в минимальной
+системе и в контейнере обычно нет.
 
 Дальше:
 
