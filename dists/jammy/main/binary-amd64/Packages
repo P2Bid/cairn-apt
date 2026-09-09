@@ -1,0 +1,23 @@
+Package: cairn
+Version: 2026.09.09-3
+Architecture: amd64
+Maintainer: Denis Malko <denismalkomail@gmail.com>
+Installed-Size: 26689
+Depends: libc6 (>= 2.34)
+Priority: optional
+Section: devel
+Filename: pool/main/c/cairn/cairn_2026.09.09-3_amd64.deb
+Size: 7431640
+SHA256: 20ddf2c9c228390fbf5c189d41ea2c5c291df216df01efc8a804013a7b25cf82
+SHA1: 8cc9af8c36eab10ff56620c20f9e5f079c08a8df
+MD5sum: 5d66e230aa9bd9ee996ff0f2325cdb35
+Description: Журнал работы над задачей. Клиент.
+ Доска задач команды: человек владеет
+ задачей, агент её исполняет, контекст
+ работы переживает человека. Клиент ведёт
+ журнал работы, поднимает пульт и отдаёт
+ уровень агентским сессиям.
+ .
+ После установки разложите уровень под
+ своего пользователя: cairn install
+
