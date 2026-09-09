@@ -1,16 +1,16 @@
 Codename: jammy
-Date: Wed, 09 Sep 2026 01:51:10 UTC
+Date: Wed, 09 Sep 2026 08:31:39 UTC
 Architectures: amd64
 Components: main
 MD5Sum:
- 155380c25c7fda2329a87eaa5c71ea3f 968 main/binary-amd64/Packages
- 12ad1d78705f998b5e1eaa3a1997dc80 623 main/binary-amd64/Packages.gz
+ 375f6a9c8ed4ede117ea8a26f033be24 980 main/binary-amd64/Packages
+ 165704779433535fa0d71694e8622797 632 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d 36 main/binary-amd64/Release
 SHA1:
- 047ddc3fbcdf5e78bf6bfa082a6b7cfa24370b30 968 main/binary-amd64/Packages
- f2394e176f26a4bc0b5cf24aba27b1870f8b919e 623 main/binary-amd64/Packages.gz
+ b5adc1484b58f1126d18f46e3f3e0747ddbaa9ca 980 main/binary-amd64/Packages
+ e9917883c47c3ea459c294eef2cb5aa1467c914c 632 main/binary-amd64/Packages.gz
  f9082edea14092794f38390390e06abf8a922f7d 36 main/binary-amd64/Release
 SHA256:
- 47cea72b72b140bf58f27feddcb8822712e09aab07831b68ec600ca741bf3e4b 968 main/binary-amd64/Packages
- f25392a9e05a040dfa2e6be33d21522ebe88aab292b6ae31e307d1bc1c01b0c6 623 main/binary-amd64/Packages.gz
+ 026a5e07bfdd17e048a805f7095e1d4091dedb378f626e395a6c2c697b605549 980 main/binary-amd64/Packages
+ 8443d733e99ce367340773b90ad3071f600ffa90b91035a5074265ad6c19b6e0 632 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8 36 main/binary-amd64/Release
