@@ -1,0 +1,106 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Витрина APT — cairn</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #1b1d21;
+    --dim: #5c6169;
+    --bg: #fbfaf8;
+    --card: #ffffff;
+    --line: #e2e0dc;
+    --code-bg: #f4f2ee;
+    --accent: #7a5c3e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e6e4e0; --dim: #9a968f; --bg: #16181b;
+      --card: #1d2024; --line: #2e3238; --code-bg: #101215; --accent: #c9a87c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 .3rem; letter-spacing: -.01em; }
+  .lede { color: var(--dim); margin: 0 0 2.2rem; }
+  h2 { font-size: 1.05rem; margin: 2.4rem 0 .7rem; letter-spacing: -.005em; }
+  p { margin: 0 0 1rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .875em;
+         background: var(--code-bg); padding: .12em .35em; border-radius: 3px; }
+  pre {
+    background: var(--code-bg); border: 1px solid var(--line); border-radius: 6px;
+    padding: .9rem 1rem; overflow-x: auto; margin: 0 0 1rem;
+  }
+  pre code { background: none; padding: 0; font-size: .82rem; line-height: 1.55; }
+  ol { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin-bottom: .5rem; }
+  .note {
+    border-left: 3px solid var(--accent); padding: .1rem 0 .1rem .9rem;
+    color: var(--dim); margin: 1.2rem 0;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 1rem; font-size: .92rem; }
+  th, td { text-align: left; padding: .45rem .7rem; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--dim); font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
+  a { color: inherit; text-decoration-color: var(--line); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+           color: var(--dim); font-size: .85rem; }
+</style>
+
+<main>
+  <h1>Витрина APT для cairn</h1>
+  <p class="lede">Репозиторий, из которого ставится <code>cairn</code>. Порождается задачей выпуска
+  в закрытом репозитории кода; правки руками теряются при следующем выпуске.</p>
+
+  <h2>Подключить</h2>
+  <p>Один файл, <code>/etc/apt/sources.list.d/cairn.sources</code>. Ключ вкладывается прямо в него —
+  отдельный keyring не нужен. Скопируйте целиком:</p>
+  <pre><code>sudo tee /etc/apt/sources.list.d/cairn.sources &gt;/dev/null &lt;&lt;EOF
+Types: deb
+URIs: https://p2bid.github.io/cairn-apt
+Suites: $(lsb_release -cs)
+Components: main
+Signed-By:
+$(curl -fsSL https://p2bid.github.io/cairn-apt/cairn.asc | sed -e 's/^/ /' -e 's/^ $/ ./')
+EOF</code></pre>
+
+  <p>Дальше — две команды, и вторая обязательно <strong>от себя</strong>, а не от root:</p>
+  <pre><code>sudo apt update &amp;&amp; sudo apt install cairn
+cairn install</code></pre>
+
+  <div class="note">
+    <code>cairn install</code> не вызывается установкой пакета намеренно: он раскладывает уровень
+    (skills и агентов) в домашний каталог человека, а скрипт пакета работает от root, где этого
+    каталога нет.
+  </div>
+
+  <h2>Что здесь лежит</h2>
+  <table>
+    <tr><th>путь</th><th>что это</th></tr>
+    <tr><td><code>dists/&lt;suite&gt;/</code></td><td>подписанные индексы по выпускам Ubuntu</td></tr>
+    <tr><td><code>pool/</code></td><td>сами пакеты</td></tr>
+    <tr><td><a href="cairn.asc"><code>cairn.asc</code></a></td><td>открытый ключ, которым подписаны индексы</td></tr>
+    <tr><td><code>conf/</code>, <code>db/</code></td><td>состояние <code>reprepro</code>, переписывается выкладкой</td></tr>
+  </table>
+
+  <p>Кто предпочитает ключ отдельным файлом — кладёт <code>cairn.asc</code> в
+  <code>/etc/apt/keyrings/</code> правами <strong>644</strong> (файл читает системный пользователь
+  <code>_apt</code>) и пишет <code>Signed-By: /etc/apt/keyrings/cairn.asc</code>.</p>
+
+  <h2>Чего здесь нет</h2>
+  <p>Архитектура одна — <strong>amd64</strong>. ARM не собирается и в индексе не объявлен.</p>
+  <p>Выпуски Ubuntu появляются здесь по мере сборки. Если <code>apt update</code> прошёл, а пакет
+  не нашёлся — под ваш выпуск он ещё не собран; посмотрите, какие suite есть, в
+  <a href="dists/">dists/</a>.</p>
+
+  <footer>
+    Двоичный файл виден всякому, кто знает этот адрес: репозиторий публичный, потому что из
+    закрытого пакеты через <code>apt</code> не отдаются вовсе. Исходники cairn при этом остаются
+    закрытыми.
+  </footer>
+</main>
