@@ -1,13 +1,16 @@
+Origin: cairn
 Codename: jammy
 Components: main
 Architectures: amd64
 SignWith: 8E5A297D6B3D1D8ED5C452A1C0DF80DD62B0B60A
 
+Origin: cairn
 Codename: noble
 Components: main
 Architectures: amd64
 SignWith: 8E5A297D6B3D1D8ED5C452A1C0DF80DD62B0B60A
 
+Origin: cairn
 Codename: resolute
 Components: main
 Architectures: amd64

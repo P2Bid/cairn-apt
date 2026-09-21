@@ -1,16 +1,18 @@
+Changelogs: https://P2Bid.github.io/cairn-apt/changelogs/@CHANGEPATH@.changelog
+Origin: cairn
 Codename: jammy
-Date: Wed, 09 Sep 2026 09:33:09 UTC
+Date: Mon, 21 Sep 2026 21:49:27 UTC
 Architectures: amd64
 Components: main
 MD5Sum:
- 8f215eef8ac17d788de0ded66f3c5e5b 980 main/binary-amd64/Packages
- 706201e1b9cc3882521b2f9250c9d1e8 630 main/binary-amd64/Packages.gz
- 063287201b2354699acfe229a752201d 36 main/binary-amd64/Release
+ 772fe6a08992a2d9c16039c9689adfd9 980 main/binary-amd64/Packages
+ 3ad1fbb42cc836d0cb5c1f1ee690ee70 632 main/binary-amd64/Packages.gz
+ af40721ef227e386978d0d4dbf4f8fdb 50 main/binary-amd64/Release
 SHA1:
- d365fb6e04d216e05fa59994da8132bf957a6477 980 main/binary-amd64/Packages
- 7b53d37bed1bc8545fbe6e200ad504db70ac9550 630 main/binary-amd64/Packages.gz
- f9082edea14092794f38390390e06abf8a922f7d 36 main/binary-amd64/Release
+ b00508fc0bb261c1407bd32c6e55ab2f1b7bb0c2 980 main/binary-amd64/Packages
+ 2e6605fb11441bc55aae2dfc2478462d587f08d9 632 main/binary-amd64/Packages.gz
+ 765ef39054dc669c4e593847da9f34a2f2f668f1 50 main/binary-amd64/Release
 SHA256:
- 6b7a60a579ad57548097657ff5ced59aee5464fc578a9babdf0de9173f396b8b 980 main/binary-amd64/Packages
- 983e5fc918022553fcf0c65e423128a57a7948498f24f4596bc87d62aa7f1635 630 main/binary-amd64/Packages.gz
- f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8 36 main/binary-amd64/Release
+ ed6a9ed7c395f937b3fef993f2f0e3ffe6e6af55e1f8dcc52db454a0082ec6fc 980 main/binary-amd64/Packages
+ cfe7a88d295ebe39e3563fdd34f50e31f7dbb010b2a90ad0ee30553a171344a6 632 main/binary-amd64/Packages.gz
+ f9a2f610f0ea99bee2206b680daf39b66b4877688a619f38f3d7b043c15b4951 50 main/binary-amd64/Release

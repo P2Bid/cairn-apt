@@ -1,16 +1,18 @@
+Changelogs: https://P2Bid.github.io/cairn-apt/changelogs/@CHANGEPATH@.changelog
+Origin: cairn
 Codename: noble
-Date: Fri, 18 Sep 2026 00:11:55 UTC
+Date: Mon, 21 Sep 2026 21:49:27 UTC
 Architectures: amd64
 Components: main
 MD5Sum:
- 083ccad1b1754ad5fc23f23e1f668a4c 980 main/binary-amd64/Packages
- 6f3e3a8f9637a2fe76edd8ced5e866e0 631 main/binary-amd64/Packages.gz
- 063287201b2354699acfe229a752201d 36 main/binary-amd64/Release
+ 297ddf4642d886bc8ac308fbfc2b663c 980 main/binary-amd64/Packages
+ 98a96b89ee55f1799b785feea275402b 632 main/binary-amd64/Packages.gz
+ af40721ef227e386978d0d4dbf4f8fdb 50 main/binary-amd64/Release
 SHA1:
- a5bcf3822f8102bcc84f6ddbf4277222019811eb 980 main/binary-amd64/Packages
- 123f9d1189180af08f4c1fc2b374959c0e7d2dc8 631 main/binary-amd64/Packages.gz
- f9082edea14092794f38390390e06abf8a922f7d 36 main/binary-amd64/Release
+ 97f85d02b227d6698b9163e2a8e10687ab1b7464 980 main/binary-amd64/Packages
+ 90664c4035c971583f2071689187f1f0fb372dcc 632 main/binary-amd64/Packages.gz
+ 765ef39054dc669c4e593847da9f34a2f2f668f1 50 main/binary-amd64/Release
 SHA256:
- d44507a8768bd61b292c2a8fee758ecba1cdaeea349c18638d2b8d2a74e2582f 980 main/binary-amd64/Packages
- 8790445490d9cf1c986127aaf62a6ef6a5ef71441eb7705951e17319d44a721b 631 main/binary-amd64/Packages.gz
- f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8 36 main/binary-amd64/Release
+ d7e41b7f3eef920814ab764903e4c93b34791910c5d661e4b74a5afdf2a0bb79 980 main/binary-amd64/Packages
+ 122d7353b8670343d4a6c530102f5fff8ac18821d1f2729a7ba833756f20e9d6 632 main/binary-amd64/Packages.gz
+ f9a2f610f0ea99bee2206b680daf39b66b4877688a619f38f3d7b043c15b4951 50 main/binary-amd64/Release
