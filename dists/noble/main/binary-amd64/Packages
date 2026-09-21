@@ -1,16 +1,16 @@
 Package: cairn
-Version: 2026.09.21-8~noble
+Version: 2026.09.21-9~noble
 Architecture: amd64
 Maintainer: Denis Malko <denismalkomail@gmail.com>
-Installed-Size: 29424
+Installed-Size: 29494
 Depends: libc6 (>= 2.39)
 Priority: optional
 Section: devel
-Filename: pool/main/c/cairn/cairn_2026.09.21-8~noble_amd64.deb
-Size: 8112060
-SHA256: 7e7fddca73b9d5f823cdf72d2892c1bcac210082e4f32abd4e14a9d18b05824d
-SHA1: b062de08e42a4d8eda4d95b579959753481d830a
-MD5sum: 3b188e8ecfd3b0e455fdf4343fe65ea3
+Filename: pool/main/c/cairn/cairn_2026.09.21-9~noble_amd64.deb
+Size: 8121520
+SHA256: 500eaf8250b64cf9eae3e0e2dbefcb2597a96f76ee3bfb373a01fee1e57054f8
+SHA1: 9b98d3f35495b766f192fca222106cd48e46a4a4
+MD5sum: 63a739c1a382dd90fb1bf5fde4b0e4ab
 Description: Журнал работы над задачей. Клиент.
  Доска задач команды: человек владеет
  задачей, агент её исполняет, контекст
