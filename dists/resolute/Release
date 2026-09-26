@@ -1,18 +1,18 @@
 Changelogs: https://P2Bid.github.io/cairn-apt/changelogs/@CHANGEPATH@.changelog
 Origin: cairn
 Codename: resolute
-Date: Tue, 22 Sep 2026 11:28:30 UTC
+Date: Sat, 26 Sep 2026 13:02:38 UTC
 Architectures: amd64
 Components: main
 MD5Sum:
- 740c8db757565c57eeba825be08d0e36 988 main/binary-amd64/Packages
- 65036d58a755de7cf1df1f4f2e02ff62 634 main/binary-amd64/Packages.gz
+ 6b4b1a7d2b07345d2f89faa599cb7019 988 main/binary-amd64/Packages
+ 8d8f991863ec7c5947a3ff38befbc332 634 main/binary-amd64/Packages.gz
  af40721ef227e386978d0d4dbf4f8fdb 50 main/binary-amd64/Release
 SHA1:
- 034dd987f3d9a0ffbd51af53b251cc2b28e74caa 988 main/binary-amd64/Packages
- 4c2dcc7f255a1fef51709dcea33296ce951feb04 634 main/binary-amd64/Packages.gz
+ 1f3fadb293449b578855135607af673e9437027b 988 main/binary-amd64/Packages
+ 8ce5ae4fff58a14f568d49b1d6a30747a52f60ce 634 main/binary-amd64/Packages.gz
  765ef39054dc669c4e593847da9f34a2f2f668f1 50 main/binary-amd64/Release
 SHA256:
- 8a7922bfac3862dfd14543c0e193eb3ba90895a432f28261e7b4c808e700f0c3 988 main/binary-amd64/Packages
- 4bf404c82cc4bae933cf83f728821c1fb0e4d090acca4946bbe15bcdb2cb1bc6 634 main/binary-amd64/Packages.gz
+ 9f6ea5f4ebc9b13ecfba93672e016f01095a5cedeed4ee9e322f83b33d287700 988 main/binary-amd64/Packages
+ a0a80f7305cce2f2c42e3a3508c04a1dc5d774334caa943688ad03ba2df26d8d 634 main/binary-amd64/Packages.gz
  f9a2f610f0ea99bee2206b680daf39b66b4877688a619f38f3d7b043c15b4951 50 main/binary-amd64/Release

@@ -1,16 +1,16 @@
 Package: cairn
-Version: 2026.09.22-10~resolute
+Version: 2026.09.26-12~resolute
 Architecture: amd64
 Maintainer: Denis Malko <denismalkomail@gmail.com>
-Installed-Size: 30428
+Installed-Size: 33306
 Depends: libc6 (>= 2.39)
 Priority: optional
 Section: devel
-Filename: pool/main/c/cairn/cairn_2026.09.22-10~resolute_amd64.deb
-Size: 8270156
-SHA256: f1d0125e15f3f672feadd6e54cc64f8e374825b7882aef3488237d500bf5f2a2
-SHA1: b3e0f9a6306e92037788b42db58aaeb2c420e57d
-MD5sum: 39a92529bcd1016daf0142cd51af9af9
+Filename: pool/main/c/cairn/cairn_2026.09.26-12~resolute_amd64.deb
+Size: 8836592
+SHA256: 2e28b5b494ba395d96886fdc65db40213ead6deebec234bff10ece7afc500836
+SHA1: 9caef992d275e485a41959650b75108bb2de5b5d
+MD5sum: 96a4219815cb1452a94663a51accf919
 Description: Журнал работы над задачей. Клиент.
  Доска задач команды: человек владеет
  задачей, агент её исполняет, контекст
